@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Chibi Stories Magazine</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='main.js'></script>
+</head>
+
+<body class="second-body" onload="cargarDibujo();">
+    <pablo class="main-draws">
+        <canvas id="dibujo" width="781" height="781" onclick="cambiarColor();" onmousemove="setCoords(event);" style="position: relative; border: 0;"></canvas>
+                
+    </pablo>
+
+        <div class="text-center" id="colorElegido" style="display: block; width: 100px; height: 100px; border: 1px solid #000; 
+        margin-left: auto; margin-right: auto;"></div>
+        <p class="text-center" id="coords"></p>
+        
+        <div class="colors-line d-flex flex-nowrap bd-highlight">
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #FFFFFF;" onclick="setColor('#FFFFFF');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #FF0000;" onclick="setColor('#FF0000');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #00FF00;" onclick="setColor('#00FF00');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #0000FF;" onclick="setColor('#0000FF');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #FFE680;" onclick="setColor('#FFE680');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #00AAD4;" onclick="setColor('#00AAD4');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #A7B8BC;" onclick="setColor('#A7B8BC');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #fff6d5;" onclick="setColor('#fff6d5');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #d38d5f;" onclick="setColor('#d38d5f');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #FFE600;" onclick="setColor('#FFE600');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #e9ddaf;" onclick="setColor('#e9ddaf');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #e9afaf;" onclick="setColor('#e9afaf');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #E73CD5;" onclick="setColor('#E73CD5');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #FF8A00;" onclick="setColor('#FF8A00');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #F0D2E4;" onclick="setColor('#F0D2E4');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #000000;" onclick="setColor('#000000');"></button>
+        </div>
+</body>
+

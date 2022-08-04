@@ -6,6 +6,15 @@ body {
     color: darkslategray;
 }
 
+.second-body{
+    background-color: rgba(213, 246, 255, 0.820);
+    color: rgb(255, 255, 255);
+    max-width: 781px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
 main {
     /* background-color: #d5f6ff; */
     background-color: rgba(213, 246, 255, 0.820);
@@ -40,7 +49,7 @@ main {
     color: rgb(255, 255, 255);
     max-width: 1300px;
     align-self: center;
-    display: flex;
+    display: flex; 
     flex-direction: column;
     align-content: center;
     margin-left: auto;
@@ -61,6 +70,16 @@ main {
     margin-right: auto;
     gap: 20px;
 
+}
+
+.main-draws{
+    background-color: rgba(255, 230, 128, 0.820);
+    color: rgb(255, 255, 255);
+    overflow: auto;
+    scrollbar-color: blue;
+    line-height: var(--lh-md);
+    max-height: 600px;
+    display: block;
 }
 
 .responsive {
@@ -145,3 +164,4 @@ main {
 .home-section-button:hover{
     background-color: #ffd562;
 }
+
