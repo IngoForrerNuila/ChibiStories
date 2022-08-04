@@ -7,9 +7,23 @@ body {
 }
 
 main {
-    background-color: rgb(250, 192, 100);
+    background-color: #d5f6ff;
     color: rgb(255, 255, 255);
-    max-width: 1000px;
+    max-width: 1300px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+
+}
+
+.main-home{
+    background-color: #00AAD4;
+    color: rgb(255, 255, 255);
+    max-width: 1300px;
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -22,12 +36,54 @@ main {
 
 .responsive {
     max-width: 100%;
-    
 }
 
 .home-logo{
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 80%;
+}
 
+
+.welcome-click-me-button {
+    text-decoration: none;
+    width: 30vh;
+    height: 10vh;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0CBCBC;
+    color: white;
+    font-weight: bolder;
+    font-size: 5.0vh;
+    border-radius: 1.0vh;
+    border-color: #0CBCBC;   
+}
+
+.welcome-click-me-button:hover{
+    background-color: #15d2d2;
+}
+
+.home-section-button{
+    text-decoration: none;
+    width: 30vh;
+    height: 10vh;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFC21C;
+    color: white;
+    font-weight: bolder;
+    font-size: 5.0vh;
+    border-radius: 1.0vh;
+    border-color: #FFC21C;
+       
+}
+
+.home-section-button:hover{
+    background-color: #ffd562;
 }
