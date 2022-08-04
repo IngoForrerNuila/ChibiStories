@@ -7,7 +7,8 @@ body {
 }
 
 main {
-    background-color: #d5f6ff;
+    /* background-color: #d5f6ff; */
+    background-color: rgba(213, 246, 255, 0.820);
     color: rgb(255, 255, 255);
     max-width: 1300px;
     align-self: center;
@@ -21,7 +22,35 @@ main {
 }
 
 .main-home{
-    background-color: #00AAD4;
+    background-color: rgba(0, 170, 212, 0.820);
+    color: rgb(255, 255, 255);
+    max-width: 1300px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+
+}
+
+.main-magazine{
+    background-color: rgba(218, 98, 98, 0.820);
+    color: rgb(255, 255, 255);
+    max-width: 1300px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+
+}
+
+.main-games{
+    background-color: rgba(255, 230, 128, 0.820);
     color: rgb(255, 255, 255);
     max-width: 1300px;
     align-self: center;
@@ -47,25 +76,54 @@ main {
 }
 
 
-.welcome-click-me-button {
+.welcome-lets-go-button {
     text-decoration: none;
-    width: 30vh;
-    height: 10vh;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    width: 25vh;
+    height: 8vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
     background-color: #0CBCBC;
     color: white;
     font-weight: bolder;
-    font-size: 5.0vh;
+    font-size: 4.0vh;
     border-radius: 1.0vh;
     border-color: #0CBCBC;   
 }
 
-.welcome-click-me-button:hover{
+.welcome-lets-go-button:hover{
     background-color: #15d2d2;
 }
+
+.welcome-credits-button {
+    text-decoration: none;
+    width: 25vh;
+    height: 8vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #A7B8BC;
+    color: white;
+    font-weight: bolder;
+    font-size: 4.0vh;
+    border-radius: 1.0vh;
+    border-color: #A7B8BC;    
+}
+
+.welcome-credits-button:hover{
+    background-color: #c2cdcf;
+}
+
+
+.ingo-portfolio-logo{
+    width: 25vh;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+
+}
+
 
 .home-section-button{
     text-decoration: none;
