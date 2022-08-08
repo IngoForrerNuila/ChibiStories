@@ -17,38 +17,66 @@
         <a href="games.html" class="text-decoration-none"><img class="responsive home-logo " src="img/chibi-stories-logo-1.png"></a>
     </div>
 
-    <pablo class="main-draws">
+    <pablo class="main-draws">     
+
         <canvas id="dibujo" width="781" height="781" onclick="cambiarColor();" onmousemove="setCoords(event);" style="position: relative; border: 0;"></canvas>
                 
     </pablo>
         <div class="options-cont d-flex justify-content-center">
 
-            <!-- <button id="download">Download Draw!</button> -->
+            <button id="download">Save!</button>
 
             <div class="text-center" id="colorElegido" style="display: block; width: 100px; height: 100px; border: 1px solid #000; 
-            margin-left: auto; margin-right: auto; margin-top: 0.5rem;"></div>
-        </div>
+                margin-left: auto; margin-right: auto; margin-top: 0.5rem;"></div>
+
+            <a href="robin-draw-1.html"> <button type="button" class="text-decoration-none clear-button">Clear!</button></a>            
+
+        </div>            
+        
         <p class="text-center" id="coords"></p>
         
         <div class="colors-line d-flex justify-content-center" >
             <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #FFFFFF;" onclick="setColor('#FFFFFF');"></button>
-            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #FF0000;" onclick="setColor('#FF0000');"></button>
-            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #00FF00;" onclick="setColor('#00FF00');"></button>
-            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #0000FF;" onclick="setColor('#0000FF');"></button>
-            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #FFE680;" onclick="setColor('#FFE680');"></button>
-            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #00AAD4;" onclick="setColor('#00AAD4');"></button>
-            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #A7B8BC;" onclick="setColor('#A7B8BC');"></button>
-            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #fff6d5;" onclick="setColor('#fff6d5');"></button>
-        </div>
-        <div class="colors-line d-flex justify-content-center">
-            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #d38d5f;" onclick="setColor('#d38d5f');"></button>
-            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #FFE600;" onclick="setColor('#FFE600');"></button>
-            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #e9ddaf;" onclick="setColor('#e9ddaf');"></button>
-            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #e9afaf;" onclick="setColor('#e9afaf');"></button>
-            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #E73CD5;" onclick="setColor('#E73CD5');"></button>
-            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #FF8A00;" onclick="setColor('#FF8A00');"></button>
-            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #F0D2E4;" onclick="setColor('#F0D2E4');"></button>
             <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #000000;" onclick="setColor('#000000');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #A7B8BC;" onclick="setColor('#A7B8BC');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #FF0000;" onclick="setColor('#FF0000');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #E73CD5;" onclick="setColor('#E73CD5');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #e9afaf;" onclick="setColor('#e9afaf');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #F0D2E4;" onclick="setColor('#F0D2E4');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #0000FF;" onclick="setColor('#0000FF');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #00AAD4;" onclick="setColor('#00AAD4');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #51cae2;" onclick="setColor('#51cae2');"></button>             
+        </div>
+
+        <div class="colors-line d-flex justify-content-center">
+                        
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #008000;" onclick="setColor('#008000');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #50d638;" onclick="setColor('#50d638');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #aaffaa;" onclick="setColor('#aaffaa');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #5fd3bc;" onclick="setColor('#5fd3bc');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #2ca089;" onclick="setColor('#2ca089');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #d38d5f;" onclick="setColor('#d38d5f');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #e9ddaf;" onclick="setColor('#e9ddaf');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #FFE600;" onclick="setColor('#FFE600');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #FFE680;" onclick="setColor('#FFE680');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #fff6d5;" onclick="setColor('#fff6d5');"></button>
+            
+               
+        </div>
+
+        <div class="colors-line d-flex justify-content-center">
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #FF8A00;" onclick="setColor('#FF8A00');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #ff9955;" onclick="setColor('#ff9955');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #ffc8a3;" onclick="setColor('#ffc8a3');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #cccccc;" onclick="setColor('#cccccc');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #e6e6e6;" onclick="setColor('#e6e6e6');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #f2b6ff;" onclick="setColor('#f2b6ff');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #b05ec2;" onclick="setColor('#b05ec2');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #fe4da3;" onclick="setColor('#fe4da3');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #c1a5e8;" onclick="setColor('#c1a5e8');"></button>
+            <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #d2b556;" onclick="setColor('#d2b556');"></button>
+            
+
         </div>
 </body>
 
