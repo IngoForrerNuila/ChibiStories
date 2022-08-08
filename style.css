@@ -9,7 +9,7 @@ body {
 .second-body{
     background-color: rgba(213, 246, 255, 0.820);
     color: rgb(255, 255, 255);
-    max-width: 781px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     
@@ -78,7 +78,7 @@ main {
     overflow: auto;
     scrollbar-color: blue;
     line-height: var(--lh-md);
-    max-height: 600px;
+    max-height: 500px;
     display: block;
 }
 
@@ -132,6 +132,24 @@ main {
 }
 
 .welcome-credits-button:hover{
+    background-color: #c2cdcf;
+}
+
+#download {
+    text-decoration: none;
+    width: 15vh;
+    height: 8vh;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #A7B8BC;
+    color: white;
+    font-weight: bolder;
+    font-size: 2.0vh;
+    border-radius: 1.0vh;
+    border-color: #A7B8BC;    
+}
+
+#download:hover{
     background-color: #c2cdcf;
 }
 
