@@ -24,10 +24,14 @@
     </pablo>
         <div class="options-cont d-flex justify-content-center">
 
-            <button id="download">Save!</button>
+            <a id="download" download="my-draw.png"><button type="button" onClick="download()" class="download">Save!</button></a>
+
+            <button class="previous-next-button">First Pic!</button>
 
             <div class="text-center" id="colorElegido" style="display: block; width: 100px; height: 100px; border: 1px solid #000; 
                 margin-left: auto; margin-right: auto; margin-top: 0.5rem;"></div>
+
+            <a href="amie-draw-1.html"><button class="previous-next-button">Next!</button></a>
 
             <a href="michi-draw-1.html"> <button type="button" class="text-decoration-none clear-button">Clear!</button></a>            
 
@@ -77,6 +81,14 @@
             <button style="display: block; width: 50px; height: 50px; border: 1px solid #000; background-color: #d2b556;" onclick="setColor('#d2b556');"></button>
             
 
+        </div>
+
+        <div class="text-center">
+            <a href="games.html" class="text-decoration-none"> <button type="button" class="welcome-lets-go-button">Go Back!</button></a>
+        </div>
+
+        <div class="text-center footer">
+            <a href="games.html"><img class="responsive ingo-portfolio-logo" src="img/ingo-logo-horizontal-5.png"></a>
         </div>
 </body>
 

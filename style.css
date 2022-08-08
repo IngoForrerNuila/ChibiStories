@@ -16,7 +16,7 @@ body {
 }
 
 main {
-    /* background-color: #d5f6ff; */
+    
     background-color: rgba(213, 246, 255, 0.820);
     color: rgb(255, 255, 255);
     max-width: 1300px;
@@ -92,8 +92,13 @@ main {
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: 80%;
+    animation: title 1s;
 }
 
+@keyframes title {
+  0% {transform: translateY(-233px);}
+  100% {transform: translateY(0px);}
+}
 
 .welcome-lets-go-button {
     text-decoration: none;
@@ -119,8 +124,8 @@ main {
     text-decoration: none;
     width: 25vh;
     height: 8vh;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
     background-color: #A7B8BC;
@@ -153,7 +158,26 @@ main {
     background-color: #ff74b7;
 }
 
-#download {
+.previous-next-button{
+    text-decoration: none;
+    width: 12vh;
+    height: 6vh;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #ff9955;
+    color: white;
+    font-weight: bolder;
+    font-size: 2.0vh;
+    line-height: 20px;
+    border-radius: 1.0vh;
+    border-color: #ff9955;    
+}
+
+.previous-next-button:hover{
+    background-color: #ffc8a3;
+}
+
+.download {
     text-decoration: none;
     width: 9vh;
     height: 6vh;
@@ -167,7 +191,7 @@ main {
     border-color: #50d638;    
 }
 
-#download:hover{
+.download:hover{
     background-color: #76ee61;
 }
 
@@ -178,7 +202,6 @@ main {
     margin-bottom: 1rem;
 
 }
-
 
 .home-section-button{
     text-decoration: none;
@@ -194,10 +217,88 @@ main {
     font-size: 5.0vh;
     border-radius: 1.0vh;
     border-color: #FFC21C;
-       
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
 }
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;}
+    }  
+
 
 .home-section-button:hover{
     background-color: #ffd562;
 }
 
+.game-title{
+    background-color:#0CBCBC;
+    font-weight: bolder;
+    color: white;
+    font-size: 3vh;
+    
+}
+
+.draw-portraits{
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 80%;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;}
+    100%{
+        opacity: 100;}
+    }
+
+/*
+Esta Animacion realiza una transicion del Element Main
+Un movimiento desde arriba hacia abajo. Visualmente muy
+bonito lamentablemente el proposito era nada mas aplicarlo 
+al Logo y no al Elemento Main completo junto a sus elementos.
+    animation: topToBottom ease 1s;
+  -webkit-animation: topToBottom ease 2s;
+  -moz-animation: topToBottom ease 2s;
+  -o-animation: topToBottom ease 2s;
+  -ms-animation: topToBottom ease 2s; */
+
+/* @keyframes topToBottom {
+  0% {
+    margin-top: -23%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+} 
+
+ /* 
+Animacion, para realizar un Estiramiento de algun elemento
+desde el Cero al 100% muy efectivo para botones, links o imagenes.
+    animation-name: stretch;
+    animation-duration: 0.80s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes stretch {
+    0% {
+      transform: scale(.3);
+      
+    }
+} */

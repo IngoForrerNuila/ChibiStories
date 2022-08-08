@@ -137,34 +137,14 @@ function hexToRgb(hex) {
   } : null;
 }
 
+//FUNCION PARA GUARDAR EL CANVAS- DOWNLOADING CANVA FILE//
+function download() {
+  var download = document.getElementById("download");
+  var image = document.getElementById("dibujo").toDataURL("image/png")
+      .replace("image/png", "image/octet-stream");
+  download.setAttribute("href", image);
+  //download.setAttribute("download","archive.png");
+  }
 
 
-let canvas = document.getElementById('dibujo');
-let ctx = canvas.getContext('2d');
-
-// Canvas code goes here 
-// ...
-
-document.getElementById('download').addEventListener('click', function(e) {
-    // Convert our canvas to a data URL
-    let canvasUrl = dibujo.toDataURL("image/jpeg", 0.5);
-    console.log(canvasUrl);
-    // Create an anchor, and set the href value to our data URL
-    const createEl = document.createElement('a');
-    createEl.href = canvasUrl;
-
-    // This is the name of our downloaded file
-    createEl.download = "download-this-canvas";
-
-    // Click the download button, causing a download, and then remove it
-    createEl.click();
-    createEl.remove();
-});
-
-
-// Convert our canvas to a data URL
-let canvasUrl = dibujo.toDataURL("image/jpeg", 0.5);
-console.log(canvasUrl);
-// Outputs 
-// "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAA...
 
