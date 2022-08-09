@@ -250,19 +250,13 @@ main {
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: 80%;
-    /* 
-    -->The effect for each element is 
-    making the whole website super slow<<--
     opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 1s; */
+	animation-duration: 1s;
 }
 
-/* 
--->The effect for each element is 
-    making the whole website super slow<<--
 @keyframes fadeInOpacity {
 	0% {
 		opacity: 0;}
