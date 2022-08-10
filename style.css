@@ -82,6 +82,20 @@ main {
     display: block;
 }
 
+.main-episodes{
+    background-color: rgba(82, 82, 82, 0.82);
+    color: rgb(248, 175, 255);
+    max-width: 1300px;
+    align-self: center;
+    display: flex; 
+    flex-direction: column;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+
+}
+
 .responsive {
     max-width: 100%;
 }
@@ -270,7 +284,7 @@ main {
     font-weight: bolder;
     margin-left: auto;
     margin-right: auto;
-    
+
 
 }
 
