@@ -96,6 +96,20 @@ main {
 
 }
 
+.main-products{
+    background-color: rgba(213, 246, 255, 1);
+    color: rgb(248, 175, 255);
+    max-width: 1300px;
+    align-self: center;
+    display: flex; 
+    flex-direction: column;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+
+}
+
 .responsive {
     max-width: 100%;
 }
@@ -351,6 +365,90 @@ div#page {
 		margin-bottom:4em;
 	} */
 }
+
+/*PRODUCTS SECTION WITH ITS BACKGROUND IMAGES DIVS*/
+
+.right {float: right !important;}
+/* Image zoom on hover + Overlay colour */
+.parent {
+    width: 40%;
+    height: 60vh;
+    margin: 20px;
+    /*border: 1px solid blue;*/
+    overflow: hidden;
+    position: relative;
+    /*float: left;*/
+    display: inline-block;
+    cursor: pointer;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+/* Several different images */
+
+.bg-one {background-image: url(img/michi-portrait.png);}
+/*.chibi-logo {background-image: url(img/chibi-stories-logo-1.png);}*/
+
+/*p {
+    display: none;
+    font-size: 35px;
+    color: #ffffff !important;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}*/
+
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover a, .parent:focus a {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*background-color: rgba(52,73,94,0.75);*/
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    .parent {width: 100%; margin: 20px 0px}
+    .home-logo {width: 100%; margin: 20px 0px}
+}
+
+
 
 
 /*
