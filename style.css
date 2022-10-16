@@ -590,6 +590,8 @@ p {
     .papaloco {width: 100%; height: 70vh; margin: 0px 0px;}
     .palpatin {animation-name: palpatin; animation-iteration-count: 1 ; top: 1vh;}
 
+}
+
 @media screen and (min-width: 960px) {
     .glow {animation: glow 0s ease-in-out infinite alternate;}
 
