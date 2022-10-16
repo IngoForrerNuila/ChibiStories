@@ -315,6 +315,21 @@ main {
 
 }
 
+.palpatin {
+    animation-name: palpatin;
+    animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out infinite alternate;
+	animation-duration: 1s;
+
+}
+
+@keyframes palpatin{
+    0% {font-size: 35px;}
+    20% {font-size: 40px;}
+    100% {font-size: 35px;}
+
+}
+
 
 /* ------------>>>>CARUSEL DE IMAGENES<<<<------------ */
 
