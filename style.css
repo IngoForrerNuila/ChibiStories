@@ -539,7 +539,7 @@ p {
     /*font-size: 35px;*/
     /*color: #fff;*/
     text-align: center;
-    animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite ;/*alternate*/
   }
   
   @keyframes glow {
