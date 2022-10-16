@@ -19,7 +19,7 @@ main {
     
     background-color: rgba(213, 246, 255, 0.820);
     color: rgb(255, 255, 255);
-    max-width: 1300px;
+    max-width: 1200px;
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@ main {
 .main-home{
     background-color: rgba(0, 170, 212, 0.820);
     color: rgb(255, 255, 255);
-    max-width: 1300px;
+    max-width: 1200px;
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@ main {
 .main-magazine{
     background-color: rgba(218, 98, 98, 0.820);
     color: rgb(255, 255, 255);
-    max-width: 1300px;
+    max-width: 1200px;
     align-self: center;
     display: flex; 
     flex-direction: column;
@@ -61,7 +61,7 @@ main {
 .main-games{
     background-color: rgba(255, 230, 128, 0.820);
     color: rgb(255, 255, 255);
-    max-width: 1300px;
+    max-width: 1200px;
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@ main {
 .main-episodes{
     background-color: rgba(82, 82, 82, 0.82);
     color: rgb(248, 175, 255);
-    max-width: 1300px;
+    max-width: 1200px;
     align-self: center;
     display: flex; 
     flex-direction: column;
@@ -97,9 +97,9 @@ main {
 }
 
 .main-products{
-    background-color: rgba(213, 246, 255, 1);
+    background-color: rgba(213, 246, 255, 0.820);
     color: rgb(248, 175, 255);
-    max-width: 1300px;
+    max-width: 1200px;
     align-self: center;
     display: flex; 
     flex-direction: column;
@@ -111,9 +111,9 @@ main {
 }
 
 .main-extras{
-    background-color:rgb(0, 170, 212);
+    background-color: rgba(0, 170, 212, 0.820);
     color: rgb(248, 175, 255);
-    max-width: 1300px;
+    max-width: 1200px;
     align-self: center;
     display: flex; 
     flex-direction: column;
@@ -381,6 +381,20 @@ div#page {
 
 /*PRODUCTS SECTION WITH ITS BACKGROUND IMAGES DIVS*/
 
+.papaloco {
+    background-color: rgb(213, 246, 255);;
+    /*opacity: 20%;*/
+    width: 30vw;
+    height: 80vh;
+    /*margin: 20px;*/
+    /*border: 1px solid blue;*/
+    overflow: hidden;
+    position: relative;
+    /*float: left;*/
+    display: inline-block;
+    /*cursor: pointer;*/
+}
+
 .right {float: right !important;}
 /* Image zoom on hover + Overlay colour */
 .parent {
@@ -393,6 +407,7 @@ div#page {
     /*float: left;*/
     display: inline-block;
     cursor: pointer;
+    
 }
 
 .child {
@@ -475,7 +490,7 @@ p {
 .hija {
     height: 100%;
     width: 100%;
-    background-size: cover;
+    background-size: cover;/*poner contain*/
     background-repeat: no-repeat;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
@@ -485,7 +500,20 @@ p {
 
 /* Several different images */
 
-.chibi-bios {background-image: url(img/chibi-bios.png);}
+.chibi-bios {
+    background-image: url(img/chibi-bio.png);
+    
+}
+
+.concept-art {
+    background-image: url(img/concept-art.png);
+    
+}
+
+.about-me {
+    background-image: url(img/about-me.png);
+    
+}
 /*.chibi-logo {background-image: url(img/chibi-stories-logo-1.png);}*/
 
 .hija-text {
@@ -496,7 +524,7 @@ p {
     text-align: center;
     margin: auto;
     position: absolute;
-    top: 5vh;
+    top: 3vh;
     left: 0;
     bottom: 0;
     right: 0;
@@ -540,6 +568,7 @@ p {
     .papi {width: 80vw; height: 20vh; margin: 20px 0px}
     .hija-text {top: 1vh;}
     p {top: 20vh;}
+    .papaloco {width: 100%; height: 70vh; margin: 0px 0px}
 }
 
 /*
