@@ -318,7 +318,7 @@ main {
 .palpatin {
     animation-name: palpatin;
     animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
+	/*animation-timing-function: ease-in-out;*/
 	animation-duration: 1s;
 
 }
