@@ -568,7 +568,9 @@ p {
     .papi {width: 80vw; height: 20vh; margin: 20px 0px}
     .hija-text {top: 1vh;}
     p {top: 20vh;}
+    .hija {background-position: 50%;}
     .papaloco {width: 100%; height: 70vh; margin: 0px 0px}
+    
 }
 
 /*
