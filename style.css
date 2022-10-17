@@ -610,7 +610,6 @@ div#page {
 }
 
 
-
 /* Media Queries */
 @media screen and (max-width: 960px) {
     .parent {width: 100%; height: 50vh; margin: 20px 0px;}
