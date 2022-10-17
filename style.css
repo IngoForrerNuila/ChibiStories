@@ -442,9 +442,11 @@ div#page {
 .bg-one {background-image: url(img/michi-portrait.png);}
 /*.chibi-logo {background-image: url(img/chibi-stories-logo-1.png);}*/
 
-p {
+.p {
     display: none;
     font-size: 35px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    font-family: sans-serif;
     color: #ffffff !important;
     font-family: sans-serif;
     text-align: center;
@@ -578,6 +580,37 @@ p {
     /*background-color: rgba(52,73,94,0.75);*/
 }
 
+/* BIOGRAPHIES CHIBI CHARACTERS */
+
+.fixing-issues{
+    display: block;
+    /*white-space: normal;*/
+    word-wrap: break-word;
+
+}
+
+.contenedor-maestro{
+    display: flex;
+}
+
+.michi-text-box{
+    padding: 0.5rem;
+    max-width: 50vw;
+    text-align: left;
+       
+}
+
+.chibi-video-box {
+    padding: 1rem;
+}
+
+#michi-bio{
+    width: 60vw;
+    height: 60vh;
+    
+}
+
+
 
 /* Media Queries */
 @media screen and (max-width: 960px) {
@@ -589,6 +622,10 @@ p {
     0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;}
     .hija {background-position: 50%;}
     .papaloco {width: 100%; height: 70vh; margin: 0px 0px;}
+    #michi-bio {width: 100vw; height: 100vh;}
+    .chibi-video-box{margin-top: -35%;}
+    .contenedor-maestro{display: flow-root;}
+    .michi-text-box{max-width: 100vw; margin-top: -40%;}
     
 }
 
