@@ -125,6 +125,7 @@ main {
 
 .responsive {
     max-width: 100%;
+    height: auto;
 }
 
 .home-logo{
@@ -165,20 +166,20 @@ main {
     text-decoration: none;
     width: 25vh;
     height: 8vh;
-    margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
-    background-color: #A7B8BC;
+    background-color: #b6b6b6;
     color: white;
     font-weight: bolder;
     font-size: 4.0vh;
     border-radius: 1.0vh;
-    border-color: #A7B8BC;    
+    border-color: #999999;   
 }
 
 .welcome-credits-button:hover{
-    background-color: #c2cdcf;
+    background-color: #dfdfdf;
 }
 
 .clear-button {
@@ -285,7 +286,6 @@ main {
 }
 
 .draw-portraits{
-
     margin-left: auto;
     margin-right: auto;
     padding-top: 1rem;
@@ -314,25 +314,8 @@ main {
 
 
 }
-/*
-.palpatin {
-    animation-name: palpatin;
-    animation-iteration-count: 1;
-	animation-timing-function: ease-in-out;
-	animation-duration: 1s;
 
-}
-
-@keyframes palpatin{
-    0% {font-size: 35px;}
-    50% {font-size: 40px;}
-    100% {font-size: 35px;}
-
-}*/
-
-
-
-/* ------------>>>>CARUSEL DE IMAGENES<<<<------------ */
+/* ------------>>>>IMAGE CAROUSEL<<<<------------ */
 
 div#page {
     margin-left: 1em;
@@ -399,16 +382,11 @@ div#page {
 
 .papaloco {
     background-color: rgb(213, 246, 255);;
-    /*opacity: 20%;*/
     width: 30vw;
     height: 80vh;
-    /*margin: 20px;*/
-    /*border: 1px solid blue;*/
     overflow: hidden;
     position: relative;
-    /*float: left;*/
     display: inline-block;
-    /*cursor: pointer;*/
 }
 
 .right {float: right !important;}
@@ -417,13 +395,10 @@ div#page {
     width: 30vw;
     height: 60vh;
     margin: 20px;
-    /*border: 1px solid blue;*/
     overflow: hidden;
     position: relative;
-    /*float: left;*/
     display: inline-block;
     cursor: pointer;
-    
 }
 
 .child {
@@ -480,9 +455,7 @@ div#page {
     position: absolute;
     top: 0;
     left: 0;
-    /*background-color: rgba(52,73,94,0.75);*/
 }
-
 
 /*EXTRAS SECTION WITH ITS BACKGROUND IMAGES DIVS*/
 
@@ -492,10 +465,8 @@ div#page {
     width: 60vw;
     height: 30vh;
     margin: 20px;
-    /*border: 1px solid blue;*/
     overflow: hidden;
     position: relative;
-    /*float: left;*/
     display: inline-block;
     cursor: pointer;
 }
@@ -554,16 +525,13 @@ div#page {
     position: absolute;
     top: 0;
     left: 0;
-    /*background-color: rgba(52,73,94,0.75);*/
 }
 
 /* BIOGRAPHIES CHIBI CHARACTERS */
 
 .fixing-issues{
     display: block;
-    /*white-space: normal;*/
     word-wrap: break-word;
-
 }
 
 .contenedor-maestro{
@@ -573,8 +541,7 @@ div#page {
 .michi-text-box{
     padding: 0.5rem;
     max-width: 50vw;
-    text-align: left;
-       
+    text-align: left;  
 }
 
 .chibi-video-box {
@@ -598,16 +565,11 @@ div#page {
 
 .crazypapa {
     background-color: rgb(0, 0, 0);;
-    /*opacity: 20%;*/
     width: 30vw;
     height: 80vh;
-    /*margin: 20px;*/
-    /*border: 1px solid blue;*/
     overflow: hidden;
     position: relative;
-    /*float: left;*/
     display: inline-block;
-    /*cursor: pointer;*/
 }
 
 .right {float: right !important;}
@@ -616,13 +578,10 @@ div#page {
     width: 30vw;
     height: 60vh;
     margin: 20px;
-    /*border: 1px solid blue;*/
     overflow: hidden;
     position: relative;
-    /*float: left;*/
     display: inline-block;
     cursor: pointer;
-    
 }
 
 .daughter {
@@ -680,25 +639,21 @@ div#page {
     position: absolute;
     top: 0;
     left: 0;
-    /*background-color: rgba(52,73,94,0.75);*/
 }
 
 
 /* AREA OF IMAGES CALLED THROUGH CSS */
 
 .chibi-bios {
-    background-image: url(img/chibi-bio.png);
-    
+    background-image: url(img/chibi-bio.png); 
 }
 
 .concept-art {
-    background-image: url(img/concept-art.png);
-    
+    background-image: url(img/concept-art.png); 
 }
 
 .about-me {
-    background-image: url(img/about-me.png);
-    
+    background-image: url(img/about-me.png); 
 }
 
 .bg-one {background-image: url(img/michi-portrait.png); }
@@ -715,6 +670,50 @@ div#page {
 
 
 /* LIST OF FUNCTIONAL MEDIA QUERIES */
+
+@media screen and (min-width: 768px){
+
+    .main-home{
+        background-color: rgba(0, 170, 212, 0.820);
+        color: rgb(255, 255, 255);
+        max-width: 1200px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 20px;
+    }
+
+    .home-logo{
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 70%;
+    }
+
+    .button-cont-1{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-flow: dense;
+    }
+
+    .button-cont-2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: column;
+    }
+
+    .welcome-credits-button{
+        margin-top: none;
+        margin-bottom: none;
+    }
+
+}
+
+
 @media screen and (max-width: 960px) {
     .parent {width: 100%; height: 50vh; margin: 20px 0px;}
     p {top: 20vh;}
@@ -731,36 +730,30 @@ div#page {
     .crazypapa{width: 100%; height: 70vh; margin: 0px 0px;}
     .daughter {background-position: 50%;}
     .father {width: 100vw; height: 50vh; margin: 0px 0px;}
+    .home-logo{
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 90%;
+    }
+
+    .draw-portraits{
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 40%;
+        
+    }
+
+    .main-draws{
+        max-height: 350px;
+    }
     
 }
 
-@media screen and (min-width: 960px) {
-    /*.glow {animation: glow 0s ease-in-out infinite alternate;}*/
-
-}
-
-
 /*
-Esta Animacion realiza una transicion del Element Main
-Un movimiento desde arriba hacia abajo. Visualmente muy
-bonito lamentablemente el proposito era nada mas aplicarlo 
-al Logo y no al Elemento Main completo junto a sus elementos.
-    animation: topToBottom ease 1s;
-  -webkit-animation: topToBottom ease 2s;
-  -moz-animation: topToBottom ease 2s;
-  -o-animation: topToBottom ease 2s;
-  -ms-animation: topToBottom ease 2s; */
-
-/* @keyframes topToBottom {
-  0% {
-    margin-top: -23%;
-  }
-  100% {
-    margin-top: 0%;
-  }
-} 
-
- /* 
 Animacion, para realizar un Estiramiento de algun elemento
 desde el Cero al 100% muy efectivo para botones, links o imagenes.
     animation-name: stretch;
@@ -778,4 +771,5 @@ desde el Cero al 100% muy efectivo para botones, links o imagenes.
       transform: scale(.3);
       
     }
-} */
+} 
+*/
