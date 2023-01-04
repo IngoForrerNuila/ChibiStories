@@ -128,6 +128,15 @@ main {
     height: auto;
 }
 
+.home-logo-index{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 80%;
+    animation: title 1s;
+}
+
 .home-logo{
     margin-left: auto;
     margin-right: auto;
@@ -709,6 +718,10 @@ div#page {
     .welcome-credits-button{
         margin-top: none;
         margin-bottom: none;
+    }
+
+    .home-logo-index{
+        display: none;
     }
 
 }
